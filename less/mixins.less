@@ -1,1 +1,16 @@
 // Mixins Here
+.custombutton(@display, @justify){
+    display: @display;
+    justify-content: @justify;
+    align-items: center;
+    background-color: @btn-bg-color;
+    color: white;
+    width: 30%;
+    height: 45px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    &:hover{
+        background-color: darkblue;
+      }
+}
+

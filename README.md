@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+	An adaptive website is going to divide the design amoung desktop, tablet, or phone. Media queries will be used and layout widths are still hardcoded at each media query. This results in quick deployment for specific devices. While Responsive layouts combine features of fixed, adaptive, and fluid websites into one seamless experience. Media queries are used to constrain responsive units so that as the viewport expands or shrinks, you get an experience that looks and functions beautifully across thousands of devices and screen sizes.
+
 2. Describe what it means to be mobile first vs desktop first.
 
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+	When designing a website you can either write the media queries mobile first using @media(min-with: 500px){}; or desktop first using @media(ma-width: 500px){}.
+
+3. What does font-size: 62.5% in the html tag do for us when using rem units?
+
+	Using 62.5% in the html tag makes the math easier for us when converting into rem for responsive design. Makeing 1rem = 10px.
 
 4. How would you describe preprocessing to someone new to CSS?
+	
+	When writing CSS we can use preprocessors to generate CSS from the preprocessor's own unique syntax. There are many CSS preprocessors to choose from. CSS preprocessors add features that pur CSS doesn't have like mixins, nesting, and variables. Preprocessors are simply tools developers use to help them write and organize CSS. 
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+	My favorite concept in preprocessing is nesting. Mixins give me the most trouble, particularly paramettric mixins.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
