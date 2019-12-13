@@ -1,3 +1,12 @@
+.fontstyle {
+  font-size: 2rem;
+  color: #22283A;
+}
+.border {
+  border: 2px dashed black;
+  border-radius: 20px;
+  padding: 5px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -162,18 +171,24 @@ p {
 }
 .navigation {
   width: 100%;
+  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: darkgray ;
+  opacity: 70%;
 }
 .navigation h1 {
   font-size: 3rem;
   margin: 8% 0 4% ;
 }
 .navigation a {
-  text-decoration: none;
-  color: black;
   font-size: 2rem;
+  color: #22283A;
+  border: 2px dashed black;
+  border-radius: 20px;
+  padding: 5px;
+  text-decoration: none;
   margin: 1% ;
 }
 .navigation .links {
@@ -192,6 +207,10 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro .imgtop {
+  width: auto;
+  margin-top: 15%;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -202,6 +221,20 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media ( max-width: 500px ) {
+  .home .space-images .launch {
+    display: flex;
+    display: none;
+  }
+  .home .space-images .sky {
+    display: flex;
+    display: none;
+  }
+  .home .space-images .blast {
+    width: 90%;
+    display: flex;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -239,18 +272,41 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: #22283A;
+  border: 1px solid black;
   color: white;
   width: 30%;
   height: 45px;
   font-size: 1.5rem;
   border-radius: 10px;
 }
-.home .walk .walk-img {
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #22283A;
+}
+.home .walk .walk-text .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+.home .walk .walk-text .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media ( max-width: 500px ) {
+  .home .walk {
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+    margin: 1%;
+  }
+  .home .walk .walk-text .btn {
+    width: 90%;
+  }
+  .home .walk .walk-text .walk-img {
+    width: 100%;
+  }
 }
