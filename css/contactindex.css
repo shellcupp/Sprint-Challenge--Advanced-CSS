@@ -199,106 +199,23 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.home .intro .imgtop {
-  width: auto;
-  margin-top: 15%;
-}
-.home .intro h2 {
-  padding: 15px;
-}
-.home .intro p {
-  padding: 0 15px;
-}
-.home .space-images {
-  display: flex;
-  flex-wrap: wrap;
+.container .header {
   width: 100%;
-}
-@media ( max-width: 500px ) {
-  .home .space-images .launch {
-    display: flex;
-    display: none;
-  }
-  .home .space-images .sky {
-    display: flex;
-    display: none;
-  }
-  .home .space-images .blast {
-    width: 90%;
-    display: flex;
-  }
-}
-.home .space-images img {
-  width: 28%;
-  margin: 20px 2.5%;
-  border-radius: 20px;
-  height: 100%;
-}
-.home .visit-planets {
-  padding: 15px;
-}
-.home .visit-planets h3 {
-  margin-top: 11px;
-}
-.home .visit-planets p {
-  margin-top: 13px;
-}
-.home .walk {
-  margin-top: 60px;
-  border-top: 1px solid #dee2e6;
-  padding: 50px 60px;
   display: flex;
+  background-color: darkslateblue;
+  padding: 15%;
+}
+.container .header .bannerimg {
+  width: 75%;
+}
+.container .header .intro {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
-.home .walk .walk-text {
-  width: 50%;
+.container .header .intro h2 {
+  font-size: 2.5rem;
 }
-.home .walk .walk-text h3 {
-  margin-bottom: 10px;
-}
-.home .walk .walk-text p {
-  margin-bottom: 26px;
-}
-.home .walk .walk-text .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #22283A;
-  border: 1px solid black;
-  color: white;
-  width: 30%;
-  height: 45px;
+.container .header .intro p {
   font-size: 1.5rem;
-  border-radius: 10px;
-}
-.home .walk .walk-text .btn:hover {
-  background-color: white;
-  color: #22283A;
-}
-.home .walk .walk-text .walk-img {
-  width: 46%;
-  margin-left: 4%;
-}
-.home .walk .walk-text .walk-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-@media ( max-width: 500px ) {
-  .home .walk {
-    width: 100%;
-    padding: 1%;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .home .walk .walk-text {
-    width: 100%;
-    margin: 1%;
-  }
-  .home .walk .walk-text .btn {
-    width: 90%;
-  }
-  .home .walk .walk-text .walk-img {
-    width: 100%;
-  }
 }
