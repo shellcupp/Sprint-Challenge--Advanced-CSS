@@ -177,10 +177,10 @@ p {
   font-size: 2rem;
   font-style: normal;
   color: #22283A;
-  text-decoration: none;
   border: 2px dashed black;
   border-radius: 20px;
   padding: 5px;
+  text-decoration: none;
   margin: 1% ;
 }
 .navigation .links {
